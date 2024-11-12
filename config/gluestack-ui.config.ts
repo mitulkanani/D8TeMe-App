@@ -438,6 +438,14 @@ export const gluestackUIConfig = createConfig({
       grayTextColor: "#6B6163",
       primaryBorderColor: '#D6DCEC',
       radioColor: '#EBEEF6',
+      fontPrimaryColor:'#FF407D',
+      fontSecondaryColor:"#FF0080",
+      grayDisableTextColor:'#8B8B8B',
+      grayText:'#939393',
+      blueTextcolor:'#1E22FB',
+      buttonBgcolor:'#1E1E1E0D3',
+      grayTextMidium:"#848199",
+      
     },
     w: {
       '1/2': '50%',
@@ -573,7 +581,7 @@ export const gluestackUIConfig = createConfig({
       extraBlack: '950',
     },
     fonts: {
-      heading: fontFamily.AvianoSans,
+      heading: fontFamily.Poppins,
       body: fontFamily.Poppins,
       mono: undefined,
     },

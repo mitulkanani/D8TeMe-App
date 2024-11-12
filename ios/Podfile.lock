@@ -7,6 +7,8 @@ PODS:
     - AppAuth/Core
   - boost (1.84.0)
   - BranchSDK (3.6.5)
+  - BVLinearGradient (2.8.3):
+    - React-Core
   - DoubleConversion (1.1.6)
   - FBAEMKit (17.4.0):
     - FBSDKCoreKit_Basics (= 17.4.0)
@@ -1355,6 +1357,8 @@ PODS:
     - FBSDKGamingServicesKit (~> 17.4)
     - FBSDKShareKit (~> 17.4)
     - React-Core
+  - react-native-otp-verify (1.1.8):
+    - React-Core
   - react-native-safe-area-context (4.14.0):
     - DoubleConversion
     - glog
@@ -2099,6 +2103,7 @@ PODS:
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - ffmpeg-kit-react-native (from `../node_modules/ffmpeg-kit-react-native`)
@@ -2144,6 +2149,7 @@ DEPENDENCIES:
   - react-native-config (from `../node_modules/react-native-config`)
   - react-native-document-picker (from `../node_modules/react-native-document-picker`)
   - react-native-fbsdk-next (from `../node_modules/react-native-fbsdk-next`)
+  - react-native-otp-verify (from `../node_modules/react-native-otp-verify`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-version-number (from `../node_modules/react-native-version-number`)
   - react-native-video (from `../node_modules/react-native-video`)
@@ -2213,6 +2219,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  BVLinearGradient:
+    :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -2300,6 +2308,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-document-picker"
   react-native-fbsdk-next:
     :path: "../node_modules/react-native-fbsdk-next"
+  react-native-otp-verify:
+    :path: "../node_modules/react-native-otp-verify"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-version-number:
@@ -2393,6 +2403,7 @@ SPEC CHECKSUMS:
   AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   BranchSDK: ef7d89062afb08b20f65d5b1633b215ee77ab77f
+  BVLinearGradient: 880f91a7854faff2df62518f0281afb1c60d49a3
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
   FBLazyVector: 7075bb12898bc3998fd60f4b7ca422496cc2cdf7
@@ -2414,7 +2425,7 @@ SPEC CHECKSUMS:
   NWWebSocket: 040d22f23438cc09aaeabf537beff67699c3c76d
   pusher-websocket-react-native: e40c49a1e4ec96d4157375aebcf44943f0f8f62f
   PusherSwift: cad631bad86cfff4b8458dce1310a7774e469b1f
-  RCT-Folly: 84578c8756030547307e4572ab1947de1685c599
+  RCT-Folly: bf5c0376ffe4dd2cf438dcf86db385df9fdce648
   RCTDeprecation: fde92935b3caa6cb65cbff9fbb7d3a9867ffb259
   RCTRequired: 75c6cee42d21c1530a6f204ba32ff57335d19007
   RCTTypeSafety: 7e6fe47bfb693c50d4669db1a480ca5331795f5b
@@ -2448,6 +2459,7 @@ SPEC CHECKSUMS:
   react-native-config: 8f7283449bbb048902f4e764affbbf24504454af
   react-native-document-picker: e9d83c149bdd72dc01cf8dcb8df0389c6bd5fddb
   react-native-fbsdk-next: de7d8792163c648b27ed853d0dab181cf928aa32
+  react-native-otp-verify: b524a7f44b691644bea08376d6a4782a2df57e09
   react-native-safe-area-context: 2500e4fe998caad50ad3bc51ec23ef951308569e
   react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
   react-native-video: dd8db5a31e1bf35e00c5d1c87250d1f16d9a02a1

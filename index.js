@@ -94,8 +94,7 @@ function getFontsName(props) {
 function getFontWeight(props) {
   if (
     Platform.OS === 'android' &&
-    (props.fontFamily === fontFamily.AvianoSans ||
-      props.fontFamily === fontFamily.Poppins)
+    (props.fontFamily === fontFamily.Poppins)
   ) {
     return '';
   } else {
