@@ -16,7 +16,7 @@ const AuthNavigator = () => {
         screenOptions={{ title: '', headerTintColor: COLOR_PRIMARY }}>
         <AuthStack.Screen name="Intro" component={IntroScreen} options={{ headerShown: false }}/>
         <AuthStack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: true }}/>
-        <AuthStack.Screen name="RegisterScreen" component={RegisterScreen} options={{ headerShown: false }}/>
+        <AuthStack.Screen name="RegisterScreen" component={RegisterScreen} options={{ headerShown: true }}/>
         <AuthStack.Screen name="ConfirmEmailScreen" component={ConfirmEmailScreen} options={{ headerShown: true }}/>
         <AuthStack.Screen name="RegisterWithPhoneNumberScreen" component={RegisterWithPhoneNumberScreen} options={{ headerShown: true }}/>
         <AuthStack.Screen name="SubscriptionPlanScreen" component={SubscriptionPlanScreen} options={{ headerShown: false }}/>
