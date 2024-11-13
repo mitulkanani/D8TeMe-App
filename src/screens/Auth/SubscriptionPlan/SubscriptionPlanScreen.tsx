@@ -203,12 +203,14 @@ export const styles = StyleSheet.create({
         alignItems: 'flex-start',
         padding: 18,
         marginTop: 10,
-        shadowColor: 'rgba(0,0,0, .4)', // IOS
-        shadowOffset: { height: 1, width: 1 }, // IOS
-        shadowOpacity: 1, // IOS
-        shadowRadius: 1, //IOS
-        // backgroundColor: '#F5F5F5',
-        elevation: 2,
+        elevation: 5, // Shadow for Android
+    shadowColor: '#fff', // Shadow color for iOS
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity:1,
+    shadowRadius: 2,
     },
     itemsubTextStyle: {
         fontSize: 17,

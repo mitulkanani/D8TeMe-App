@@ -445,7 +445,11 @@ export const gluestackUIConfig = createConfig({
       blueTextcolor:'#1E22FB',
       buttonBgcolor:'#1E1E1E0D3',
       grayTextMidium:"#848199",
-      
+      labelColor:'#3A3A3A',
+      graylableColor:"#7F7F7F",
+      lableLightcolor:'#CDCDCD',
+      listItemBgColor:'#FF008024',
+      borderMediumColor:'#A6A6A6'
     },
     w: {
       '1/2': '50%',

@@ -10,6 +10,7 @@ import RegisterWithPhoneNumberScreen from '../screens/Auth/Login/RegisterWithPho
 import SubscriptionPlanScreen from '../screens/Auth/SubscriptionPlan/SubscriptionPlanScreen';
 import WelcomePageScreen from '../screens/Auth/WelcomePage/WelcomePageScreen';
 const AuthStack = createStackNavigator();
+const HomeStack = createStackNavigator();
 const AuthNavigator = () => {
     return (
       <AuthStack.Navigator

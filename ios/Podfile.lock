@@ -1321,6 +1321,27 @@ PODS:
     - react-native-config/App (= 1.5.3)
   - react-native-config/App (1.5.3):
     - React-Core
+  - react-native-date-picker (5.0.7):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - react-native-document-picker (9.3.1):
     - DoubleConversion
     - glog
@@ -2147,6 +2168,7 @@ DEPENDENCIES:
   - react-native-blob-util (from `../node_modules/react-native-blob-util`)
   - react-native-branch (from `../node_modules/react-native-branch`)
   - react-native-config (from `../node_modules/react-native-config`)
+  - react-native-date-picker (from `../node_modules/react-native-date-picker`)
   - react-native-document-picker (from `../node_modules/react-native-document-picker`)
   - react-native-fbsdk-next (from `../node_modules/react-native-fbsdk-next`)
   - react-native-otp-verify (from `../node_modules/react-native-otp-verify`)
@@ -2304,6 +2326,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-branch"
   react-native-config:
     :path: "../node_modules/react-native-config"
+  react-native-date-picker:
+    :path: "../node_modules/react-native-date-picker"
   react-native-document-picker:
     :path: "../node_modules/react-native-document-picker"
   react-native-fbsdk-next:
@@ -2457,6 +2481,7 @@ SPEC CHECKSUMS:
   react-native-blob-util: e6a3b23a99ac2c3d9fa48722db049a1e1808efc2
   react-native-branch: 60737f2bb7a30d72245685854bdb5954d06a6731
   react-native-config: 8f7283449bbb048902f4e764affbbf24504454af
+  react-native-date-picker: 3399a55d9de13510ab9cb2fed2013484a6f6ebca
   react-native-document-picker: e9d83c149bdd72dc01cf8dcb8df0389c6bd5fddb
   react-native-fbsdk-next: de7d8792163c648b27ed853d0dab181cf928aa32
   react-native-otp-verify: b524a7f44b691644bea08376d6a4782a2df57e09

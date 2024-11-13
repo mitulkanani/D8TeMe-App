@@ -38,7 +38,7 @@ interface InputProps extends ComponentProps<typeof InputField> {
   onFocus?: any;
   onBlur?: any;
   maxLength?: any;
-  borderColor?: stringl
+  borderColor?: string;
 }
 
 function TextInput(props: InputProps) {
