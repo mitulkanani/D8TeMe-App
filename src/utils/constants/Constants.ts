@@ -1,5 +1,5 @@
 export const fontFamily = {
-    AvianoSans: 'AvianoSans',
+    Inter: 'Inter',
     Poppins: 'Poppins',
   };
   export const COLOR_THEME = {

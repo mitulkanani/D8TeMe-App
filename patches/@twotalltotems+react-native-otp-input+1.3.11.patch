@@ -1,0 +1,25 @@
+diff --git a/node_modules/@twotalltotems/react-native-otp-input/dist/index.js b/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
+index 71580b8..b34f3cb 100644
+--- a/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
++++ b/node_modules/@twotalltotems/react-native-otp-input/dist/index.js
+@@ -105,7 +105,7 @@ export default class OTPInputView extends Component {
+             }
+         };
+         this.focusField = (index) => {
+-            if (index < this.fields.length) {
++            if (index <  this.fields.length && this.fields[index]) {
+                 this.fields[index].focus();
+                 this.setState({
+                     selectedIndex: index
+@@ -155,8 +155,10 @@ export default class OTPInputView extends Component {
+     }
+     componentDidMount() {
+         this.copyCodeFromClipBoardOnAndroid();
++        setTimeout(()=>{
+         this.bringUpKeyBoardIfNeeded();
+-        this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.handleKeyboardDidHide);
++        },0)
++        // this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this.handleKeyboardDidHide);
+     }
+     componentWillUnmount() {
+         var _a;
