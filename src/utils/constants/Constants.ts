@@ -8,3 +8,5 @@ export const fontFamily = {
     SYSTEM: 'system',
   };
   
+export const CAMERA: string = 'camera';
+export const GALLERY: string = 'gallery';

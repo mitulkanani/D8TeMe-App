@@ -87,7 +87,7 @@ const PersonalDetails = ({ onSuccess, onBackClick }) => {
                             <PressableItemList
                                 data={genderData}
                                 selectSingleItem
-                                onclickItem={(item: React.SetStateAction<undefined>) => setSelectedGender(item)}
+                                onclickItem={(item) => setSelectedGender(item)}
                             />
                             <VStack mt={'$3'} mb={'$8'}>
                                 <Checkbox

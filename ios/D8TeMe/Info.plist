@@ -35,6 +35,12 @@
 	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>BootSplash</string>
+	<key>NSCameraUsageDescription</key>
+	<string>D8TeMe requires access to camera to upload profile and product photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>D8TeMe requires access to the photo library to upload profile and product photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>D8TeMe requires access to the microphone for live call.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>arm64</string>
