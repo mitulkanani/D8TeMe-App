@@ -37,9 +37,9 @@ const IntroSection1 = ({ navigation }) => {
                     <Button width={110} height={40} backgroundColor='transperent'
                         borderWidth={1}
                         borderColor='$white'>
-                        <ButtonIcon as={TranslateLogo} mr={'$1'} />
+                        {/* <ButtonIcon as={TranslateLogo} mr={'$1'} /> */}
                         <ButtonText color={'$white'} fontFamily={fontFamily.Poppins} fontWeight={'$medium'}>English</ButtonText>
-                        <ButtonIcon as={ArrowDownFillLogo} ml={'$1'} />
+                        {/* <ButtonIcon as={ArrowDownFillLogo} ml={'$1'} /> */}
                     </Button>
                     <Button
                         onPress={() => navigation.navigate('LoginScreen')}

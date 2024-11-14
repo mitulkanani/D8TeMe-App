@@ -15,7 +15,7 @@ const RegisterScreen = () => {
     const navigation = useNavigation();
 
     const labelForStep = ['1', '2', '3', '4'];
-    const [step, setStep] = useState(0);
+    const [step, setStep] = useState(2);
     const stepperStyles = {
         stepIndicatorSize: 30,
         currentStepIndicatorSize: 30,
