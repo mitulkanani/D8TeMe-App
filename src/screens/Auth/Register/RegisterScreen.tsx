@@ -15,7 +15,7 @@ const RegisterScreen = () => {
     const navigation = useNavigation();
 
     const labelForStep = ['1', '2', '3', '4'];
-    const [step, setStep] = useState(2);
+    const [step, setStep] = useState(0);
     const stepperStyles = {
         stepIndicatorSize: 30,
         currentStepIndicatorSize: 30,
@@ -52,12 +52,12 @@ const RegisterScreen = () => {
                 // behavior={'position'}
                 //  flex={1}
                 bg='$white'
-                // contentContainerStyle={{marginBottom:10}}
+            // contentContainerStyle={{marginBottom:10}}
             >
                 <ScrollView keyboardShouldPersistTaps="handled"
                     showsVerticalScrollIndicator={false}
                     automaticallyAdjustKeyboardInsets
-                    >
+                >
                     <VStack bg='$white' p={12}>
                         <VStack alignItems='center' mt={'$5'}>
                             <Logo />
@@ -97,10 +97,14 @@ const RegisterScreen = () => {
                             />
                             <Divider />
                         </VStack>
-                        {step === 0 && (<ContactDetails onSuccess={()=>{{setStep(1)}}} />)}
-                        {step === 1 && (<PersonalDetails onSuccess={()=>{setStep(2)}} onBackClick={() => setStep(0)} />)}
-                        {step === 2 && (<ProfilePhoto onSuccess={()=>{setStep(3)}} onBackClick={() => setStep(1)} />)}
-                        {step === 3 && (<OptionalFields onSuccess={()=>{Alert.alert("Final step")}} onBackClick={() => setStep(2)} />)}
+                        {step === 0 && (<ContactDetails onSuccess={() => { { setStep(1) } }} />)}
+                        {step === 1 && (<PersonalDetails onSuccess={() => { setStep(2) }} onBackClick={() => setStep(0)} />)}
+                        {step === 2 && (<ProfilePhoto onSuccess={() => { setStep(3) }} onBackClick={() => setStep(1)} />)}
+                        {step === 3 && (<OptionalFields onSuccess={() => {
+                            navigation.navigate('DashBoard', {
+                                screen: 'userProfile',
+                            })
+                        }} onBackClick={() => setStep(2)} />)}
                     </VStack>
                 </ScrollView></KeyboardAvoidingView>
         </SafeAreaView>)
