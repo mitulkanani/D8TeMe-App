@@ -12,6 +12,7 @@ import WelcomePageScreen from '../screens/Auth/WelcomePage/WelcomePageScreen';
 import UserProfile from '../screens/main/UserProfile/UserProfile';
 import Logo from '../assets/icons/logo.svg';
 import { ChevronLeftIcon, ChevronsLeftIcon, Icon, VStack } from '@gluestack-ui/themed';
+import DashBoardScreen from '../screens/main/DashBoard/DashBoardScreen';
 const AuthStack = createStackNavigator();
 const HomeStack = createStackNavigator();
 const RootStack = createStackNavigator();
@@ -43,6 +44,16 @@ const HomeNavigator = () => {
 
         headerBackTitle: " "
       }} />
+      <HomeStack.Screen name='DashBoardScreen' component={DashBoardScreen} options={{
+        headerTitle: () => (
+          <VStack style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }} mb='$1'>
+            <Logo />
+          </VStack>
+        ),
+
+        headerBackTitle: " "
+      }} />
+
     </HomeStack.Navigator>
   )
 }

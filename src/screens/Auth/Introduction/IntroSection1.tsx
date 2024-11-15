@@ -36,7 +36,10 @@ const IntroSection1 = ({ navigation }) => {
                 <HStack gap={5}>
                     <Button width={110} height={40} backgroundColor='transperent'
                         borderWidth={1}
-                        borderColor='$white'>
+                        borderColor='$white'
+                        onPress={()=> navigation.navigate('DashBoard', {
+                            screen: 'DashBoardScreen',
+                        })}>
                         {/* <ButtonIcon as={TranslateLogo} mr={'$1'} /> */}
                         <ButtonText color={'$white'} fontFamily={fontFamily.Poppins} fontWeight={'$medium'}>English</ButtonText>
                         {/* <ButtonIcon as={ArrowDownFillLogo} ml={'$1'} /> */}

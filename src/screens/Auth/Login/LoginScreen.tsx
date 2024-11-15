@@ -32,7 +32,7 @@ const LoginScreen = () => {
                 </VStack>
                 <HStack justifyContent='space-between' mt={'$8'} alignItems='center'>
                     <Text style={styles.signInTextStyle}>Sign in</Text>
-                    <Text style={styles.secondaryTextStyle}>I have an account</Text>
+                    <Text style={styles.secondaryTextStyle} onPress={()=> navigation.navigate("RegisterScreen")}>I don't have an account</Text>
                 </HStack>
                 <VStack mt={'$4'}>
                     <VStack height={20} />
