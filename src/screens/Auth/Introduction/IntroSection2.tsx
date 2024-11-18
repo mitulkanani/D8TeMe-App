@@ -7,33 +7,38 @@ import { Dimensions } from 'react-native';
 import Video from 'react-native-video';
 import { FlatList } from '@gluestack-ui/themed';
 import PlayIcon from '../../../assets/icons/play-dark.svg'
+import PauseIcon from '../../../assets/icons/pause.svg'
 import { ButtonIcon } from '@gluestack-ui/themed';
 
 export const IntroSection2 = () => {
-    const [activeSlider, setActiveSlider] = useState(0);
-    const [videoLayout, setVideoLayout] = useState({});
-    const SLIDER_WIDTH = Dimensions.get('window').width;
-    const [isPlaying, setIsPlaying] = useState(true);
-    const userData = [
+    const Data = [
         {
             name: "Harisha LibeyaL",
             occupation: "Personality",
             url: require('../../../assets/video/video2.mp4'),
-            profile: require('../../../assets/images/Intro/userDummy.png')
+            profile: require('../../../assets/images/Intro/userDummy.png'),
+            playing: false
         },
         {
             name: "Harisha LibeyaL",
             occupation: "Personality",
             url: require('../../../assets/video/fishvideo.mp4'),
-            profile: require('../../../assets/images/Intro/userDummy.png')
+            profile: require('../../../assets/images/Intro/userDummy.png'),
+            playing: false
         },
         {
             name: "Harisha Libeya",
             occupation: "Personality",
             url: require('../../../assets/video/hero-video.mp4'),
-            profile: require('../../../assets/images/Intro/userDummy.png')
+            profile: require('../../../assets/images/Intro/userDummy.png'),
+            playing: false
         }
     ]
+    const [activeSlider, setActiveSlider] = useState(0);
+    const [videoLayout, setVideoLayout] = useState({});
+    const SLIDER_WIDTH = Dimensions.get('window').width;
+    const [isPlaying, setIsPlaying] = useState(true);
+    const [userData, setUserData] = useState(Data)
     return (
         <VStack my={20} space={'md'} px={12}>
             <VStack>
@@ -103,7 +108,7 @@ export const IntroSection2 = () => {
                         /> */}
                         <FlatList
                             data={userData}
-                            renderItem={({ item }) => {
+                            renderItem={({ item, index }) => {
                                 return (
                                     <VStack style={{
                                         width: Dimensions.get('window').width * 0.9, // Adjust as necessary
@@ -120,10 +125,10 @@ export const IntroSection2 = () => {
                                             }}
                                             resizeMode="cover"
                                             repeat
-                                            paused={true}
+                                            paused={!(item.playing)}
                                         // Add any other props you need
                                         />
-                                        <HStack position='absolute' bottom={10} left={10}  justifyContent='space-between' width={'95%'}>
+                                        <HStack position='absolute' bottom={10} left={10} justifyContent='space-between' width={'95%'}>
                                             <HStack alignItems='center'>
                                                 <Image source={require('../../../assets/images/Intro/userDummy.png')} height={35} width={35} alt='image' />
                                                 <VStack ml='$2'>
@@ -135,8 +140,17 @@ export const IntroSection2 = () => {
                                                     </Text>
                                                 </VStack>
                                             </HStack>
-                                            <Pressable >
-                                                <PlayIcon height={40} width={40}/>
+                                            <Pressable onPress={() => {
+                                                let data = [...userData];
+                                                data[index].playing = !data[index].playing;
+                                                setUserData(data);
+                                            }}>
+                                                {!item?.playing && (
+                                                    <PlayIcon height={40} width={40} />
+                                                )}
+                                                {item?.playing && (
+                                               <PauseIcon height={35} width={35}/>
+                                                )}
                                             </Pressable>
                                         </HStack>
                                     </VStack>)
